@@ -9,10 +9,22 @@ import Button from './components/Button'
 const App = () => {  
 
   const [ counter, setCounter ] = useState(0)  
+  console.log('renderizado con valor de contador', counter)
 
-  const increaseByOne = () => setCounter(counter + 1)
-  const decreaseByOne = () => setCounter(counter - 1)
-  const resetToZero = () => setCounter(0)  
+  const increaseByOne = () => {
+    console.log('aumentando, valor del contador antes', counter)
+    setCounter(counter + 1)
+  }
+
+  const decreaseByOne = () => {
+    console.log('valor del contador decreciente antes', counter) 
+    setCounter(counter - 1)
+  }
+
+  const resetToZero = () => {
+    console.log('Reiniciando a cero, valor del contador antes', counter)
+    setCounter(0)  
+  }
 
   return (
     
