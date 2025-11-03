@@ -31,9 +31,9 @@ const App = () => {
     <div>
 
       <Display counter={counter}/>
-      <Button onClick={increaseByOne} text='plus'/>
-      <Button onClick={decreaseByOne} text='minus'/>
-      <Button onClick={resetToZero} text='reset'/>      
+      <Button onSmash={increaseByOne} text='plus'/>
+      <Button onSmash={decreaseByOne} text='minus'/>
+      <Button onSmash={resetToZero} text='reset'/>      
 
     </div>      
     
